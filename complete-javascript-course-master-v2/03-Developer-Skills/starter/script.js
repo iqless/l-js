@@ -16,3 +16,22 @@ Use the problem-solving framework: Understand the problem and break it up into s
 TEST DATA 1: [17, 21, 23]
 TEST DATA 2: [12, 5, -5, 0, 4]
 */
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+const printForecast = function (arr) {
+  const dots = '... ';
+  let outputString = dots;
+  // 1 loop gjennom arrayed
+
+  for (let i = 0; i < arr.length; i++) {
+    outputString += arr[i] + 'C in ' + i + 1 + ' days ' + dots;
+    // console.log(arr[i]);
+    // console.log(outputString);
+  }
+  //
+  return outputString;
+};
+
+console.log(printForecast(data2));
