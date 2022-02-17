@@ -26,7 +26,8 @@ const printForecast = function (arr) {
   // 1 loop gjennom arrayed
 
   for (let i = 0; i < arr.length; i++) {
-    outputString += arr[i] + 'C in ' + i + 1 + ' days ' + dots;
+    let days = i + 1;
+    outputString += arr[i] + 'ºC in ' + days + ' days ' + dots;
     // console.log(arr[i]);
     // console.log(outputString);
   }
